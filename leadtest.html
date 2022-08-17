@@ -133,7 +133,7 @@
 
                                 </form>
 
-                                <form method="POST" class="form-main " id="form-main">
+                                <form method="POST" class="form-main ">
 
                                     <div class="d-flex align-items-center justify-content-between">
                                         <h3 class="color-blue mt-2">People whom you think we can help to <span class="color-green">to grow their business.</span></h3>
@@ -175,97 +175,220 @@
                                     </div>
                                    
                                       
-                                      <div class="form-group cloned form-block mt-4" id="item_details">
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <div class="form-floating mb-3">
-                                                    <input type="email" class="form-control" onkeyup="makeSlug(this,'slug')"  id="floatingInput" placeholder="Password">
-                                                    <label for="floatingInput">Name</label>
-                                                  </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="form-floating mb-3">
-                                                    <input type="email" class="form-control" id="floatingInput" onkeyup="makeSlug(this,'phone')" placeholder="Password">
-                                                    <label for="floatingInput">Phone</label>
-                                                  </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="form-floating mb-3">
-                                                    <input type="email" class="form-control" id="floatingInput" onkeyup="makeSlug(this,'email')" placeholder="Password">
-                                                    <label for="floatingInput">Email</label>
-                                                  </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="form-floating mb-3">
-                                                    <input type="email" class="form-control" id="floatingInput" onkeyup="makeSlug(this,'cname')" placeholder="Password">
-                                                    <label for="floatingInput">Company Name</label>
-                                                  </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="form-floating mb-3">
-                                                    <input type="email" class="form-control" id="floatingInput" placeholder="Password" onkeyup="makeSlug(this,'designation')">
-                                                    <label for="floatingInput">Designation</label>
-                                                  </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <div class="form-floating mb-3">
-                                                    <input type="email" class="form-control" id="floatingInput" placeholder="Password" onkeyup="makeSlug(this,'remark')">
-                                                    <label for="floatingInput">Remark</label>
-                                                  </div>
-                                            </div>
-                                        </div>
-                                        <table class="table" id="ttable">
-                                            <thead>
-                                              <tr>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Phone</th>
-                                                <th scope="col">Email</th>
-                                                <th scope="col">Company Name</th>
-                                                <th scope="col">Designation</th>
-                                                <th scope="col">Remark</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <th scope="row">
-                                                    <div class="">
-                                                        <input type="text"  name="slug" id="slug" class="form-control" readonly="readonly" required>                                                     
+                                      <div class="form-group form-block mt-4" id="item_details">
+                                        <section class="lead1">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Name</label>
                                                       </div>
-                                                </th>
-                                                <td>
-                                                    <div class="">
-                                                        <input type="text"  name="phone" id="phone" class="form-control" readonly="readonly" required>                                                     
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Phone</label>
                                                       </div>
-                                                </td>
-                                                <td>
-                                                    <div class="">
-                                                        <input type="text"  name="email" id="email" class="form-control" readonly="readonly" required>                                                     
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Email</label>
                                                       </div>
-                                                </td>
-                                                <td>
-                                                    <div class="">
-                                                        <input type="text"  name="cname" id="cname" class="form-control" readonly="readonly" required>                                                     
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Company Name</label>
                                                       </div>
-                                                </td>
-                                                <td>
-                                                    <div class="">
-                                                        <input type="text"  name="designation" id="designation" class="form-control" readonly="readonly" required>                                                     
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Designation</label>
                                                       </div>
-                                                </td>
-                                                <td>
-                                                    <div class="">
-                                                        <input type="text"  name="remark" id="remark" class="form-control" readonly="readonly" required>                                                     
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Remark</label>
                                                       </div>
-                                                </td>
-                                              </tr>
-                                            
-                                            </tbody>
-                                          </table>
+                                                </div>
+                                            </div>
+                                            <p>data</p>
+                                        </section>
+
+                                        <section class="lead2">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Name</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Phone</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Email</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Company Name</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Designation</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Remark</label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <p>data</p>
+                                        </section>
+
+                                        <section class="lead3">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Name</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Phone</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Email</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Company Name</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Designation</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Remark</label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <p>data</p>
+                                        </section>
+
+                                        <section class="lead4">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Name</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Phone</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Email</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Company Name</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Designation</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Remark</label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <p>data</p>
+                                        </section>
+
+                                        <section class="lead5">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Name</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Phone</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Email</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Company Name</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Designation</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="Password">
+                                                        <label for="floatingInput">Remark</label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <p>data</p>
+                                        </section>
+                                  
                                       </div>
 
-                                      <div id="new_item_details" class="new_item_details">
-
-                                      </div>
+                                      <div id="new_item_details" class="new_item_details"></div>
 
                                       
 
@@ -367,19 +490,11 @@
 <script>
     jQuery(function ($) {
     $('#add_item').click(function () {
-
-        var button = $('#item_details').clone();
-        button.find('input').val('');
-        button.removeAttr('id');//ID of an element must be uniue
-        $(".new_item_details").append(button);
-        $('#removeitem').show();
-
-        // var sluginput = $('#ttable input[name="slug"]');
-  
-
-
-
-
+        // var button = $('#item_details').clone();
+        // button.find('input').val('');
+        // button.removeAttr('id');//ID of an element must be uniue
+        // $(".new_item_details").append(button);
+        // $('#removeitem').show();
 
         var button = $('#emoji_one').clone();
         button.find('input').val('');
@@ -400,29 +515,30 @@
         // $(".emojis > div:nth-child(2)").show();
     });
     $('#remove_item').click(function (e) {
-        $("#cloned_emoji div").last().remove();
-        $("#emoji_one div").last().remove();
-        $("#new_item_details > div").last().remove();
-        $('#removeitem').toggle( !$("#new_item_details").is(":empty") );
+        // $("#cloned_emoji div").last().remove();
+        // $("#emoji_one div").last().remove();
+        // $("#new_item_details > div").last().remove();
+        // $('#removeitem').toggle( !$("#new_item_details").is(":empty") );
         
         e.preventDefault();
     });
 });
 </script>
 
-<!-- <script>
+<script>
   
   $('#add_item').click(function() {
-    var numItems = $('.new_item_details .form-group').length;
+    var numItems = $('#item_details section').length;
     console.log(numItems);
-    if (numItems == 0){
-        $('.pop_emojione').addClass('popshow');
+    if (numItems == 5){
+        $('.lead2').show();
     }
-     if(numItems == 1) {
-        $('.pop_emojitwo').addClass('popshowtwo');
-    }
-     if(numItems == 2){
-        $('.fourthemoji').show();
+
+    numItems = numItems - 1;
+    console.log(numItems);
+
+     if(numItems == 4){
+        $('.lead3').show();
     }
     if(numItems == 3){
         $('.fifthemoji').show();
@@ -431,7 +547,7 @@
     
   });
 
-</script>  -->
+</script> 
 
 <script>
     $('#cloned_emoji div:nth-child(1)').addClass('firstemoji');
@@ -443,7 +559,7 @@
 <!-- <script>
   
   $('#add_item').click(function() {
-      var numItemstwo = $('.new_item_details div').length;
+      var numItemstwo = $('#item_details div').length;
       if (numItemstwo = 3) {
           $('.fourthemoji').show();
       } else {
@@ -451,8 +567,8 @@
       }
     });
   
-  </script>
-   -->
+  </script> -->
+
 
 
 
@@ -487,22 +603,6 @@ $(window).scroll(function() {
         $('#cloned_emoji').removeClass('emojistick');
     }
 });
-</script>
-
-<script>
-    function makeSlug(val,name,phone,email,cname,designation,remark) {
-        // let str = val.value;
-        // var parentelement = val.closest('.cloned').find('input');
-        // var sluginputfield = parentelement.firstChild;
-       val.parentNode.parentNode.parentNode.parentNode.querySelector('input[name="'+name+'"]').value=val.value;
-        // var sluginput = $('#ttable input[name="slug"]');
-        // console.log(val.closest('.cloned'));
-        // let output = str.replace(/\s+/g, '-').toLowerCase();
-        // $('#slug').val(output);
-        
-
-
-    }
 </script>
 
 </body>

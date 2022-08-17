@@ -16435,10 +16435,6 @@ ul {
 
 }
 
-.form-main .form-block:not(:last-child){
-  border-bottom: 1px solid #e7e7e7;
-  padding-bottom: 40px;
-}
 
 .main_banner{
 position: relative;
@@ -16744,3 +16740,22 @@ transform: scale(1);
   }
 }
 
+#ttable{
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+#ttable th, #ttable td {
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+#ttable input{
+  background: unset;
+  border: none;
+  height: 36px;
+}
+
+#ttable tbody th{
+  padding-bottom: 0;
+}
