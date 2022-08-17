@@ -117,6 +117,7 @@ body {
 p {
   margin: 0 0 20px 0;
   color: #646464;
+  line-height: 2;
 }
 h1,
 h2,
@@ -1893,7 +1894,6 @@ ul {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 45px;
 }
 @media only screen and (max-width: 991px) {
   .fxt-template-layout4 .fxt-bg-color {
@@ -16439,3 +16439,308 @@ ul {
   border-bottom: 1px solid #e7e7e7;
   padding-bottom: 40px;
 }
+
+.main_banner{
+position: relative;
+height: 70vh;
+display: grid;
+place-items: center;
+color: white;
+}
+
+.main_banner::after{
+  position: absolute;
+  content: '';
+  background-image: url(/img/1462.jpg);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.main_banner{
+  background-color: rgba(0,0,0, 0.4);
+}
+
+.mw-700{
+  max-width: 700px;
+}
+
+.main_banner .container{
+  margin-top: -100px;
+}
+
+.main_banner .mt-auto{
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.main_banner .mt-auto img{
+  width: 300px;
+}
+
+.feature_section{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.box .icon {
+  font-size: 58px;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.blue {
+  color: #2196f3;
+}
+
+.box h3{
+  margin-bottom: 20px;
+}
+
+.feature_section .box {
+  text-align: center;
+  padding: 40px 30px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 10px 40px 0px rgb(78 76 76 / 10%);
+  box-shadow: 0px 10px 40px 0px rgb(78 76 76 / 10%);
+}
+
+.yellow {
+  color: #ffc400;
+}
+
+.red {
+  color: #ec407a;
+}
+
+.emojis img{
+  width: 50px;
+}
+
+.emojis div{
+  display: none;
+}
+
+.emojis div:nth-child(1){
+  display: block;
+}
+
+#cloned_emoji{
+  z-index: 9;
+}
+
+
+#cloned_emoji div:nth-child(1){
+  background-image: url('https://c.tenor.com/0Fh8kJchnwQAAAAM/party-emoji-comedian-man.gif');
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  position: fixed;
+  right: 0%;
+  top: 0;
+  animation: transemoji 2000ms ease-out;
+  opacity: 0;
+}
+
+@keyframes transemoji{
+  0%{
+    transform: translateX(-100px);
+    opacity: 1;
+   
+  }
+
+  100%{
+     transform: translateX(0);
+     opacity: 0;   
+  }
+}
+
+#cloned_emoji div:nth-child(2){
+  background-image: url('https://c.tenor.com/63nE7vC84pIAAAAM/care-discord.gif');
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  margin-top: 2px;
+  position: fixed;
+  right: 0%;
+  top: 0;
+  animation: transemoji 2000ms ease-out;
+  opacity: 0;
+}
+
+#cloned_emoji div:nth-child(3){
+  background-image: url('https://c.tenor.com/4D53-zz8dAcAAAAM/love-cute.gif');
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  right: 0%;
+  top: 0;
+  animation: transemoji 2000ms ease-out;
+  opacity: 0;
+    background-size: contain;
+}
+
+#cloned_emoji div:nth-child(4){
+  background-image: url('https://c.tenor.com/Ql32oEBbT0IAAAAj/marvel-future-revolution-marvel-future-fight.gif');
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  right: 0%;
+  top: 0;
+  animation: transemoji 2000ms ease-out;
+  opacity: 0;
+    background-size: contain;
+}
+
+#cloned_emoji div:nth-child(5){
+  background-image: url('https://c.tenor.com/yFi06hL-W1IAAAAM/smiley.gif');
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  right: 0%;
+  top: 0;
+  animation: transemoji 2000ms ease-out;
+  opacity: 0;
+    background-size: contain;
+}
+
+#cloned_emoji{
+  display: flex;
+  column-gap: 10px;
+}
+
+#pop_emoji{
+  z-index: 9;
+}
+
+#pop_emoji div:nth-child(1){
+  background-image: url('https://c.tenor.com/0Fh8kJchnwQAAAAM/party-emoji-comedian-man.gif');
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  animation: popout 2000ms ease-out;
+  opacity: 0;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
+
+#pop_emoji div:nth-child(2){
+  background-image: url('https://c.tenor.com/63nE7vC84pIAAAAM/care-discord.gif');
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  transform: scale(1.5);
+  animation: popout 2000ms ease-out;
+  opacity: 0;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
+
+#pop_emoji div:nth-child(3){
+  background-image: url('https://c.tenor.com/4D53-zz8dAcAAAAM/love-cute.gif');
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  transform: scale(1.5);
+  animation: popout 2000ms ease-out;
+  opacity: 0;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
+
+#pop_emoji div:nth-child(4){
+  background-image: url('https://c.tenor.com/Ql32oEBbT0IAAAAj/marvel-future-revolution-marvel-future-fight.gif');
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  transform: scale(1.5);
+  animation: popout 2000ms ease-out;
+  opacity: 0;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
+
+#pop_emoji div:nth-child(5){
+  background-image: url('https://c.tenor.com/yFi06hL-W1IAAAAM/smiley.gif');
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  transform: scale(1.5);
+  animation: popout 2000ms ease-out;
+  opacity: 0;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
+
+
+/* .emojistick{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+} */
+
+.pop_emojione{
+transform: scale(1);
+  z-index: 99;
+  opacity: 0;
+}
+
+.pop_emojitwo{
+  transform: scale(1);
+    z-index: 99;
+    opacity: 0;
+  }
+  
+
+
+.popshow{
+  transform: scale(0);
+  animation: popout 2000ms ease-out;
+  opacity: 1;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
+
+.popshowtwo{
+  transform: scale(0);
+  animation: popout 2000ms ease-out;
+  opacity: 1;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
+
+
+/* .pop_emojione{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100px;
+  height: 100px;
+  animation: popout 2000ms ease-out;
+} */
+
+@keyframes popout{
+  0%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  100%{
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
